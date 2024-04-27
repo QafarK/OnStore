@@ -1,0 +1,94 @@
+﻿<Window
+    x:Class="OnStore.Views.AddCar1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:OnStore.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="AddCar1"
+    Width="500"
+    Height="500"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel Margin="45" Orientation="Vertical">
+            <Label
+                HorizontalAlignment="Center"
+                FontSize="30"
+                FontWeight="Bold"
+                Foreground="Aquamarine">
+                Car
+            </Label>
+
+            <StackPanel
+                Margin="0,20,0,0"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <Label
+                    Margin="0,0,5,0"
+                    VerticalAlignment="Center"
+                    FontWeight="ExtraBold">
+                    Car Name
+                </Label>
+                <TextBox
+                    x:Name="text1"
+                    Width="300"
+                    VerticalAlignment="Center"
+                    FontSize="15"
+                    Text="{Binding NewCar.Name1}" />
+            </StackPanel>
+
+
+            <StackPanel
+                Margin="0,20,0,0"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <Label
+                    Margin="0,0,5,0"
+                    VerticalAlignment="Center"
+                    FontWeight="ExtraBold">
+                    Color
+                </Label>
+                <TextBox
+                    x:Name="text2"
+                    Width="300"
+                    VerticalAlignment="Center"
+                    FontSize="15"
+                    Text="{Binding NewCar.Color1}" />
+            </StackPanel>
+            <StackPanel
+                Margin="0,20,0,0"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <Label
+                    Margin="0,0,5,0"
+                    VerticalAlignment="Center"
+                    FontWeight="ExtraBold">
+                    Cost
+                </Label>
+                <TextBox
+                    x:Name="text3"
+                    Width="300"
+                    VerticalAlignment="Center"
+                    FontSize="15"
+                    Text="{Binding NewCar.Cost1}" />
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button
+                    Width="100"
+                    Height="50"
+                    Margin="0,30,0,0"
+                    Click="Button_Click">
+                    Update
+                </Button>
+                <Button
+                    Width="100"
+                    Height="50"
+                    Margin="40,30,0,0"
+                    Click="Button_Click_2">
+                    Cancel
+                </Button>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
